@@ -1,0 +1,32 @@
+
+
+.backImage{
+  @apply h-[800px] bg-amber-900;
+
+
+  // background-image: url("../../assets/images/header-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container{
+
+    @apply pt-[200px];
+
+    .mainText{
+      @apply  text-white text-center text-[36px];
+    }
+
+    .smallText{
+
+      @apply text-white text-center text-[18px] pt-5;
+    }
+
+    .scrollButton{
+      @apply bg-[#1DA838] text-white rounded-[100px] py-2 px-3 text-[15px] font-light border-[0.5px] border-white block mx-auto mt-12;
+      @apply hover:bg-green-500;
+    }
+
+  }
+
+}

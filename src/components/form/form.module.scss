@@ -1,0 +1,35 @@
+
+
+.wrapper{
+  @apply bg-[#F6F7F8] pb-52 pt-80;
+
+  .secWrapper{
+    @apply max-w-[800px] mx-auto bg-[#20BF6B];
+
+    .form{
+      @apply p-6;
+
+      .headText{
+        @apply text-white text-[36px];
+      }
+
+      .fields{
+        @apply flex flex-wrap justify-around;
+
+        .formInput{
+          @apply bg-[#20bf6b] w-[325px] outline-none border-b-2 border-gray-300 hover:border-white
+          transition pb-0.5 placeholder:text-gray-300 text-white text-[15px] placeholder:opacity-65
+          placeholder:font-light placeholder:text-[15px] mx-4 mt-8;
+        }
+      }
+
+      .footerText{
+        @apply text-[14px] mt-5;
+
+        color: hsla(0, 0%, 100%, .56);
+      }
+    }
+  }
+
+
+}

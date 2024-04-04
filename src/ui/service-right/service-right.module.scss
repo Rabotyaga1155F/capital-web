@@ -1,0 +1,21 @@
+.wrapper{
+  @apply  bg-white flex;
+
+  .left{
+ @apply w-[50%] p-12;
+
+    .image{
+      @apply w-full;
+    }
+  }
+  .right{
+    @apply w-[50%] p-16;
+
+    .headText{
+      @apply text-[24px] font-medium;
+    }
+    .smallText{
+      @apply my-5;
+    }
+  }
+}

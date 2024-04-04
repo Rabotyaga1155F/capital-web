@@ -1,0 +1,42 @@
+
+
+.container{
+  @apply mx-auto pb-12;
+
+  .row{
+    @apply flex justify-center pt-12;
+
+
+    .left{
+      @apply w-[35%];
+
+      .headText{
+        @apply text-center text-[#1EA839] text-[32px];
+      }
+
+      .smallText{
+        @apply text-[18px] my-6;
+      }
+
+      .greenText{
+        @apply text-[#086634] text-[18px] my-6;
+      }
+    }
+
+    .right{
+      @apply w-[25%] pl-6;
+
+      .photo{
+        @apply w-[250px] h-[320px];
+
+      }
+      .name{
+        @apply text-[15px] font-medium;
+      }
+      .jobTitle{
+        @apply text-[15px] text-gray-500 font-light;
+      }
+    }
+  }
+
+}
