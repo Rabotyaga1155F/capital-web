@@ -1,7 +1,14 @@
 
 
 .wrapper{
-  @apply bg-[#F6F7F8] pb-52 pt-80;
+  @apply bg-[#F6F7F8] pb-52 pt-36;
+  @media (max-width: 858px) {
+      @apply px-2;
+  }
+
+  @media (min-width: 640px) and (max-width: 959px) {
+    @apply px-12;
+  }
 
   .secWrapper{
     @apply max-w-[800px] mx-auto bg-[#20BF6B];
@@ -11,7 +18,12 @@
 
       .headText{
         @apply text-white text-[36px];
+
+        @media (max-width: 858px) {
+          @apply text-center;
+        }
       }
+
 
       .fields{
         @apply flex flex-wrap justify-around;
@@ -19,7 +31,7 @@
         .formInput{
           @apply bg-[#20bf6b] w-[325px] outline-none border-b-2 border-gray-300 hover:border-white
           transition pb-0.5 placeholder:text-gray-300 text-white text-[15px] placeholder:opacity-65
-          placeholder:font-light placeholder:text-[15px] mx-4 mt-8;
+          placeholder:font-light placeholder:text-[15px] mx-4 mt-12;
         }
       }
 
@@ -31,5 +43,5 @@
     }
   }
 
-
 }
+

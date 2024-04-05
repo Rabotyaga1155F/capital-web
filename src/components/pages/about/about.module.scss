@@ -10,6 +10,8 @@
     .left{
       @apply w-[35%];
 
+
+
       .headText{
         @apply text-center text-[#1EA839] text-[32px];
       }
@@ -20,6 +22,19 @@
 
       .greenText{
         @apply text-[#086634] text-[18px] my-6;
+      }
+    }
+    @media (max-width: 1024px) {
+      .left{
+        @apply w-[55%];
+      }
+    }
+    @media (max-width: 639px) {
+      .left{
+        @apply w-full;
+      }
+      .right{
+        display: none;
       }
     }
 
@@ -36,6 +51,11 @@
       .jobTitle{
         @apply text-[15px] text-gray-500 font-light;
       }
+    }
+  }
+  @media (max-width: 639px) {
+    .row{
+      @apply px-4;
     }
   }
 

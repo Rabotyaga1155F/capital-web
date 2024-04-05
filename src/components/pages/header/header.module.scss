@@ -1,0 +1,16 @@
+
+
+.head{
+  @apply   h-24 flex items-center justify-around fixed top-0 z-auto w-full bg-white shadow;
+  .navbar{
+
+  }
+
+  .list{
+    @apply flex;
+
+    li{
+      @apply mx-4 text-[15px];
+    }
+  }
+}

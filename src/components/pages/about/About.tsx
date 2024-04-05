@@ -1,11 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./about.module.scss";
 import Image from "next/image";
 import user from "@/assets/images/skeleton.jpg";
 
-const About = () => {
+interface IAboutProps {
+  refer: any;
+}
+
+const About: FC<IAboutProps> = ({ refer }) => {
   return (
-    <div className={styles.container}>
+    <div ref={refer} className={styles.container}>
       <div className={styles.row}>
         <div className={styles.left}>
           <h2 className={styles.headText}>О нас</h2>

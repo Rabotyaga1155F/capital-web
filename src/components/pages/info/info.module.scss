@@ -1,7 +1,7 @@
 
 
 .backImage{
-  @apply h-[800px] bg-amber-900;
+  @apply h-[800px] bg-gray-700;
 
 
   // background-image: url("../../assets/images/header-bg.webp");
@@ -15,12 +15,23 @@
 
     .mainText{
       @apply  text-white text-center text-[36px];
+
+    }
+    @media (max-width: 496px) {
+      .mainText{
+        @apply text-[24px];
+      }
     }
 
     .smallText{
-
       @apply text-white text-center text-[18px] pt-5;
     }
+    @media (max-width: 496px) {
+      .smallText{
+        @apply text-[14px];
+      }
+    }
+
 
     .scrollButton{
       @apply bg-[#1DA838] text-white rounded-[100px] py-2 px-3 text-[15px] font-light border-[0.5px] border-white block mx-auto mt-12;
@@ -30,3 +41,5 @@
   }
 
 }
+
+

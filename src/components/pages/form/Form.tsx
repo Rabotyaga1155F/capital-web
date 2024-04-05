@@ -1,10 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./form.module.scss";
 import FormButton from "@/ui/buttons/form-button/FormButton";
 
-const Form = () => {
+interface IFormProps {
+  refer: any;
+}
+
+const Form: FC<IFormProps> = ({ refer }) => {
   return (
-    <div className={styles.wrapper}>
+    <div ref={refer} className={styles.wrapper}>
       <div className={styles.secWrapper}>
         <form className={styles.form} action="">
           <h1 className={styles.headText}>Отправить запрос</h1>

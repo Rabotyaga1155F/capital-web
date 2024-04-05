@@ -1,0 +1,9 @@
+
+
+.wrapper{
+  @apply rounded-[100px] text-white py-2 px-5 text-[15px] font-light
+  border-[2px] border-gray-300 block hover:bg-green-500 mt-6;
+  @media (max-width: 858px) {
+    @apply mx-auto;
+  }
+}

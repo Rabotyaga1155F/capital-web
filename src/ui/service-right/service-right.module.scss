@@ -19,3 +19,26 @@
     }
   }
 }
+@media (min-width: 640px) and (max-width: 959px) {
+  .wrapper{
+    @apply  bg-white  flex-col-reverse;
+    .left{
+
+    }
+    .right{
+      @apply w-full;
+    }
+
+  }
+}
+@media screen and (max-width: 639px){
+  .wrapper{
+    @apply  bg-white  flex-col-reverse;
+    .left{
+
+    }
+    .right{
+      @apply w-full;
+    }
+  }
+}

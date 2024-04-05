@@ -1,0 +1,16 @@
+
+
+.wrapper{
+  @apply mt-2;
+
+  .secWrapper{
+    @apply mx-auto max-w-[1043px]  flex flex-row-reverse;
+    @media (max-width: 959px) {
+      @apply justify-center;
+    }
+
+    .img{
+      @apply mx-2;
+    }
+  }
+}
