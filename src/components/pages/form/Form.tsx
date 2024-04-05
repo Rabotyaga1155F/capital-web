@@ -1,12 +1,24 @@
-import React, { FC } from "react";
+"use client";
+import React, { FC, useState } from "react";
 import styles from "./form.module.scss";
 import FormButton from "@/ui/buttons/form-button/FormButton";
+
+import { useForm } from "react-hook-form";
+import { IUserForm } from "@/types/user-form.types";
 
 interface IFormProps {
   refer: any;
 }
 
 const Form: FC<IFormProps> = ({ refer }) => {
+  const [isFormSend, setIsFormSend] = useState<boolean>(false);
+  const {
+    register,
+    reset,
+    formState: { errors, isValid },
+    handleSubmit,
+  } = useForm<IUserForm>({ mode: "onBlur" });
+
   return (
     <div ref={refer} className={styles.wrapper}>
       <div className={styles.secWrapper}>
