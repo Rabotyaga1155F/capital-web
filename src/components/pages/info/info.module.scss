@@ -4,17 +4,17 @@
   @apply h-[800px] bg-gray-700;
 
 
-  // background-image: url("../../assets/images/header-bg.webp");
+   background-image: url("../../../assets/images/konsultirpopodborpers.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   .container{
 
-    @apply pt-[200px];
+    @apply pt-[250px];
 
     .mainText{
-      @apply  text-white text-center text-[36px];
+      @apply  text-white text-center text-[42px] font-medium;
 
     }
     @media (max-width: 496px) {

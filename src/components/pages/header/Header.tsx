@@ -2,6 +2,7 @@
 import React, { FC, useRef } from "react";
 import styles from "./header.module.scss";
 import Image from "next/image";
+import logo from '../../../assets/images/logo-capital-boosted.png'
 
 interface IHeaderProps {
   referAbout: any;
@@ -48,13 +49,14 @@ const Header: FC<IHeaderProps> = ({
       referContacts.current.scrollIntoView({
         behavior: "smooth",
         block: "start",
+        inline: "start",
       });
     }
   };
 
   return (
     <header className={styles.head}>
-      <Image src={""} alt={"Logo"} />
+      <Image className={styles.img} src={logo} alt={"Logo"} />
       <nav className={styles.navbar}>
         <ul className={styles.list}>
           <li>

@@ -18,12 +18,11 @@ const Info: FC<IAboutProps> = ({ refer }) => {
     <div className={styles.backImage}>
       <div className={styles.container}>
         <h1 className={styles.mainText}>
-          Получите <br /> высококвалифицированный <br /> персонал для своей
-          компании
+          Мы помогаем привлекать <br/> и нанимать лучших
         </h1>
 
         <h2 className={styles.smallText}>
-          Мы помогаем привлекать и нанимать лучших
+
         </h2>
         <button onClick={scrollToForm} className={styles.scrollButton}>
           Оставить заявку

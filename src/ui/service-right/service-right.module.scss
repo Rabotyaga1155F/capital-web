@@ -1,15 +1,9 @@
+
 .wrapper{
-  @apply  bg-white flex;
+  @apply  bg-white flex items-center text-center;
 
-  .left{
- @apply w-[50%] p-12;
-
-    .image{
-      @apply w-full;
-    }
-  }
   .right{
-    @apply w-[50%] p-16;
+    @apply w-[50%] p-12;
 
     .headText{
       @apply text-[24px] font-medium;
@@ -17,28 +11,58 @@
     .smallText{
       @apply my-5;
     }
+
+    .buttondiv{
+      @apply inline-block;
+    }
   }
+  .left{
+    @apply w-[50%] p-12;
+
+    .image{
+      @apply w-full;
+    }
+  }
+
 }
+
 @media (min-width: 640px) and (max-width: 959px) {
   .wrapper{
-    @apply  bg-white  flex-col-reverse;
-    .left{
-
-    }
+    @apply  bg-white flex-col-reverse;
     .right{
       @apply w-full;
+
+      .buttondiv{
+        @apply inline-block mt-4;
+      }
+    }
+    .left{
+
     }
 
   }
 }
-@media screen and (max-width: 639px){
+@media  (max-width: 639px){
   .wrapper{
-    @apply  bg-white  flex-col-reverse;
-    .left{
-
-    }
+    @apply  bg-white flex-col-reverse;
     .right{
       @apply w-full;
     }
+    .left{
+      @apply p-2;
+    }
+
+  }
+}
+@media  (max-width: 546px){
+  .wrapper{
+    @apply  bg-white flex-col-reverse;
+    .right{
+      @apply w-full;
+    }
+    .left{
+      @apply w-[60%];
+    }
+
   }
 }

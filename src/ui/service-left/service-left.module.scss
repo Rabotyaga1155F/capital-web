@@ -1,15 +1,19 @@
 
 .wrapper{
-    @apply  bg-white flex;
+    @apply  bg-white flex items-center text-center;
 
   .left{
-    @apply w-[50%] p-16;
+    @apply w-[50%] p-12;
 
     .headText{
       @apply text-[24px] font-medium;
     }
     .smallText{
       @apply my-5;
+    }
+
+    .buttondiv{
+      @apply inline-block;
     }
   }
   .right{
@@ -27,6 +31,10 @@
     @apply  bg-white flex-col;
     .left{
       @apply w-full;
+
+      .buttondiv{
+        @apply inline-block mt-4;
+      }
     }
     .right{
 
@@ -34,14 +42,26 @@
 
   }
 }
-@media screen and (max-width: 639px){
+@media  (max-width: 639px){
   .wrapper{
     @apply  bg-white flex-col;
     .left{
       @apply w-full;
     }
     .right{
+      @apply p-2;
+    }
 
+  }
+}
+@media  (max-width: 546px){
+  .wrapper{
+    @apply  bg-white flex-col;
+    .left{
+      @apply w-full;
+    }
+    .right{
+      @apply w-[60%];
     }
 
   }

@@ -67,7 +67,7 @@
       }
 
       .right{
-        @apply w-1/2;
+        @apply w-1/2 mt-12;
         @media (max-width: 959px) {
           @apply w-full;
         }

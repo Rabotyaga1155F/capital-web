@@ -2,6 +2,13 @@
 
 .head{
   @apply   h-24 flex items-center justify-around fixed top-0 z-auto w-full bg-white shadow;
+
+  .img{
+    @apply w-[95px] h-[95px];
+    @media (max-width: 526px) {
+      @apply w-[40px] h-[40px];
+    }
+  }
   .navbar{
 
   }
@@ -11,6 +18,9 @@
 
     li{
       @apply mx-4 text-[15px];
+      @media (max-width: 526px) {
+        @apply mx-2 text-[12px];
+      }
     }
   }
 }

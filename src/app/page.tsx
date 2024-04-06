@@ -26,11 +26,12 @@ export default function Home() {
       <main className={styles.wrapper}>
         <Info refer={scrollRefForm} />
         <About refer={scrollRefAbout} />
-        <Services refer={scrollRefServices} />
+        <Services formRef={scrollRefForm} refer={scrollRefServices} />
         <Form refer={scrollRefForm} />
         <Contact refer={scrollRefContacts} />
-        <Footer />
+
       </main>
+        <Footer  />
     </>
   );
 }
