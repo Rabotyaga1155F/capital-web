@@ -33,6 +33,10 @@
           transition pb-0.5 placeholder:text-gray-300 text-white text-[15px] placeholder:opacity-65
           placeholder:font-light placeholder:text-[15px] mx-4 mt-12;
         }
+
+        .errorText{
+          @apply ml-4 mt-2 text-white text-[14px] ;
+        }
       }
 
       .footerText{
